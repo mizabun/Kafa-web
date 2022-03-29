@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <div className='mx-24'>
-            <h1 id='header' className='mx-auto my-6 font-black text-5xl'>Kafa</h1>
-        </div>
+        <h1 id='header' className='py-6 text-center text-4xl text-slate-50 font-black'>KAHFA</h1>
     )
 }

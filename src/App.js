@@ -1,9 +1,8 @@
-import './App.css';
 import Home from './pages/home/home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-green-600 h-screen">
       <Home />
     </div>
   );
