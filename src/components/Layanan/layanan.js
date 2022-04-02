@@ -1,27 +1,38 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-
+import dashboard from '../../asset/dashboard.png'
+import QRCode from '../../asset/QRCode.png'
+import web from '../../asset/web.png'
+import analisis from '../../asset/analisis.png'
 export default function Layanan() {
     return (
-        <div>
-            <h2 id='layanan' className='py-6 text-center text-3xl font-black'>Apa yang anda dapat dengan Kahfa</h2>
-            <div className='flex mt-14'>
-                <div className='w-2/4'>
-
+        <div className='flex justify-between'>
+            <div className='h-screen w-1/3 translate-y-2/4 space-y-3'>
+                <h2 className='text-3xl font-extrabold'>Apa yang anda dapat dengan Kahfa</h2>
+                <p className='w-8/12'>kami akan membantu anda untuk mengelola usaha anda</p>
+            </div>
+            <div>
+                <div className='flex relative mt-10'>
+                    <div className='border border-slate-100 rounded-3xl bg-white shadow-lg mt-16 mr-7 py-10 px-6 h-fit w-72 text-center space-y-6 '>
+                        <img src={dashboard} alt='' className='bg-violet-100 rounded-2xl p-4 mx-auto' />
+                        <h3 className='text-2xl font-extrabold px-4'>Apikasi Kasir Penjualan</h3>
+                        <p className='text-gray-400 font-medium'>Pantau penjualan dengan aplikasi kasir dari kahfa</p>
+                    </div>
+                    <div className='border border-slate-100 rounded-3xl bg-white shadow-lg py-10 px-6 h-fit w-72 text-center space-y-6 '>
+                        <img src={QRCode} alt='' className='bg-orange-100 rounded-2xl p-4 mx-auto' />
+                        <h3 className='text-2xl font-extrabold px-4'>Apikasi Kasir Penjualan</h3>
+                        <p className='text-gray-400 font-medium'>Pantau penjualan dengan aplikasi kasir dari kahfa</p>
+                    </div>
                 </div>
-                <div className='flex-col pl-28 w-2/4'>
-                    <div className='hover:bg-green-600 transition-all duration-500 hover:text-white rounded-lg py-5 px-5'>
-                        <h3 className='font-extrabold text-2xl'>Aplikasi Kasir untuk toko Offline</h3>
-                        <p className='text-slate-600 font-medium py-3'>pantau toko anda dengan aplikasi kasir dari kahfa yang dilengkapi dengan laporan harian</p>
-                        <Link to='/kasir'>Pelajari Selengkapnya</Link>
+                <div className='flex relative mt-7'>
+                    <div className='border border-slate-100 rounded-3xl bg-white shadow-lg mr-7 py-10 px-6 h-fit w-72 text-center space-y-6 '>
+                        <img src={web} alt='' className='bg-pink-200 rounded-2xl p-4 mx-auto' />
+                        <h3 className='text-2xl font-extrabold px-4'>Buat website untuk toko anda</h3>
+                        <p className='text-gray-400 font-medium'>bangun brand toko anda dan perluas jangkauan pemasaran</p>
                     </div>
-                    <div className='hover:bg-green-600 transition-all duration-500 hover:text-white rounded-lg py-5 px-5'>
-                        <h3 className='font-extrabold text-2xl'>Aplikasi Kasir untuk toko Offline</h3>
-                        <p className='text-slate-600 font-medium py-3'>pantau toko anda dengan aplikasi kasir dari kahfa yang dilengkapi dengan laporan harian</p>
-                    </div>
-                    <div className='hover:bg-green-600 transition-all duration-500 hover:text-white rounded-lg py-5 px-5'>
-                        <h3 className='font-extrabold text-2xl'>Aplikasi Kasir untuk toko Offline</h3>
-                        <p className='text-slate-600 font-medium py-3'>pantau toko anda dengan aplikasi kasir dari kahfa yang dilengkapi dengan laporan harian</p>
+                    <div className='border border-slate-100 rounded-3xl bg-white shadow-lg -mt-16 py-10 px-6 h-fit w-72 text-center space-y-6 '>
+                        <img src={analisis} alt='' className='bg-green-100 rounded-2xl p-4 mx-auto' />
+                        <h3 className='text-2xl font-extrabold px-4'>Analisa kemajuan Toko</h3>
+                        <p className='text-gray-400 font-medium px'>dapatkan analisa kemajuan toko dengan laporan harian</p>
                     </div>
                 </div>
             </div>
