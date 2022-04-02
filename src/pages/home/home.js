@@ -15,7 +15,7 @@ export default function Home() {
                 <img src={Ellipse1} alt='' className='absolute top-0 left-0 -z-40' />
                 <img src={Rectangle1} alt='' className='absolute top-44 left-96 -z-40' />
                 <img src={Dot} alt='' className='absolute mt-96 right-64 -z-40' />
-                <div className='bg-violet-50 h-screen w-screen absolute -z-50' />
+                <div className='bg-violet-50 h-screen w-full absolute -z-50' />
                 <Header />
                 <SubHeader />
             </div>
