@@ -5,7 +5,6 @@ import layanan from '../../asset/layanan.png'
 export default function Navbar() {
     const [activeNav, setActiveNav] = useState('#')
     const [show, setShow] = useState(true)
-    const [toggle, setToggle] = useState(true)
     return (
         <>
             <nav>

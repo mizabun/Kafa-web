@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from '../../components/header/header'
 import Layanan from '../../components/Layanan/layanan'
 import SubHeader from '../../components/subHeader/subHeader'
@@ -10,10 +10,8 @@ import Rectangle3 from '../../asset/Rectangle3.png'
 import Navbar from '../../components/nav/nav'
 import Harga from '../../components/harga/harga'
 import Footer from '../../components/footer/footer'
-import home from '../../asset/home.png'
 
 export default function Home() {
-    const [activeNav, setActiveNav] = useState('#')
     return (
         <>
             <section id='header'>
