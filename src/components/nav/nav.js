@@ -11,7 +11,7 @@ export default function Navbar() {
                 <div className={`${show ? '' : 'transform translate-y-14'} block left-2/4 -translate-x-2/4 fixed bottom-4 transition-transform duration-1000`}>
                     <div className=' rounded-full bg-indigo-900 bg-opacity-30 '>
                         <div className='flex justify-center' onClick={() => setShow(!show)}>
-                            <div className={`${show ? '' : 'rotate-180 translate-y-2/3 '} flex justify-center pt-2 transition duration-1000`}>
+                            <div className={`${show ? '' : 'rotate-180 translate-y-2/3 '} flex justify-center pt-2 cursor-pointer transition duration-1000`}>
                                 <div className='h-1 w-4 rounded-md bg-slate-700 rotate-45'></div>
                                 <div className='h-1 w-4 rounded-md bg-slate-700 -rotate-45 -ml-2'></div>
                             </div>
