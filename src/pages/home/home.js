@@ -17,27 +17,28 @@ export default function Home() {
         <>
             <section id='header'>
                 <div className='relative min-h-screen'>
-                    <img src={Ellipse1} alt='' className='absolute top-0 left-0 -z-40' />
-                    <img src={Rectangle1} alt='' className='absolute top-44 left-96 -z-40' />
-                    <img src={Dot} alt='' className='absolute mt-96 right-64 -z-40' />
-                    <div className='bg-violet-50 h-screen w-full absolute -z-50' />
+                    <div className='bg-violet-50 h-screen absolute w-full pb-20 px-6 -z-50'>
+                        <img src={Ellipse1} alt='' className='absolute top-0 left-0' />
+                        <img src={Rectangle1} alt='' className='hidden md:block absolute top-44 left-96' />
+                        <img src={Dot} alt='' className='hidden md:block absolute mt-96 right-64' />
+                    </div>
                     <Header />
                     <SubHeader />
                 </div>
             </section>
-
             <section id='layanan'>
-                <div className='relative px-36 pb-6'>
-                    <img src={Rectangle2} alt='' className='absolute translate-y-1/4 right-0 -z-40' />
-                    <img src={Rectangle3} alt='' className='absolute mt-64 ml-16 -z-40' />
+                <div className='relative px-6 md:px-36 pb-6'>
+                    <img src={Rectangle2} alt='' className='hidden md:block absolute translate-y-1/4 right-0 -z-40' />
+                    <img src={Rectangle3} alt='' className='hidden md:block absolute mt-64 -z-40' />
                     <Layanan />
                 </div>
             </section>
 
+
             <section id='harga'>
-                <div className='relative pt-20 min-h-screen'>
-                    <img src={Dot} alt='' className='absolute -mt-72 left-48 -z-40' />
-                    <img src={Ellipse2} alt='' className='absolute -mt-28 -left-3 -z-40' />
+                <div className='relative px-6 min-h-screen'>
+                    <img src={Dot} alt='' className='hidden md:block absolute -mt-72 left-48 -z-40' />
+                    <img src={Ellipse2} alt='' className='hidden md:block absolute -mt-28 -left-3 -z-40' />
                     <Harga />
                 </div>
             </section>
